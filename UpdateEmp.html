@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title></title>
+
+<style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 600px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        form {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+<form action="UpdateEmp" method="post">
+        <h2>Update Employee Details</h2>
+        <label for="EId">Enter Employee Id:</label><br>
+        <input type="number" name="Emp_Id" id="EId" placeholder="Employee Id" required><br>
+
+        <label for="FName">Enter First Name:</label><br>
+        <input type="text" name="First_Name" id="FName" placeholder="First Name" required><br>
+
+        <label for="LName">Enter Last Name:</label><br>
+        <input type="text" name="Last_Name" id="LName" placeholder="Last Name" required><br>
+
+        <label for="EEmail">Enter Email:</label><br>
+        <input type="email" name="Email" id="EEmail" placeholder="Email" required><br>
+
+        <label for="DptName">Enter Department Name:</label><br>
+        <input type="text" name="Dept_Name" id="DptName" placeholder="Department Name" required><br>
+
+        <label for="DptNum">Enter Department Number:</label><br>
+        <input type="number" name="Dept_Id" id="DptNum" placeholder="Department Number" required><br>
+
+        <label for="Desgin">Enter Designation:</label><br>
+        <input type="text" name="Designation" id="Desgin" placeholder="Designation" required><br>
+
+        <label for="ESalary">Enter Salary:</label><br>
+        <input type="number" name="Salary" id="ESalary" placeholder="Salary" required><br>
+
+        <label for="EAdd">Enter Address:</label><br>
+        <input type="text" name="Address" id="EAdd" placeholder="Address" required><br>
+
+        <input type="submit" value="Update">
+    </form>
+
+</body>
+</html>
